@@ -1,0 +1,36 @@
+.page-Header{
+	text-align: center;
+	padding-bottom: 15px;
+    margin: 51px 367px 0px;
+    border-bottom: 0px solid #eee;
+
+}
+
+
+#h1Header{
+	font-size:10%;
+	float: block;
+	width: 150%;
+    margin:auto;
+    margin-left: -367px;
+    text-align: center;
+    display: block;
+
+}
+.jumbotron{
+	background-color: red;
+}
+#jumboh1{
+	text-align: center;
+	
+}
+
+#welcomeIntro{
+	text-align: center;
+}
+
+footer{
+	text-align: center;
+}
+
+
