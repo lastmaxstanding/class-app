@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<form><input type="button" value="participation" id="button" onclick="activate();"/></form> 
+<!-- <input id="clickMe" type="button" value="clickme" onclick="participate();" /> -->
+<div id="container" class="main"><center>Student Name</center>
+<!-- <div id=desk1 class=seats><center></center></div>
+<div id=desk2 class=seats><center></center></div>
+<div id=desk3 class=seats><center></center></div>
+<div id=desk4 class=seats><center></center></div>
+<div id=desk5 class=seats><center></center></div>
+<div id=desk6 class=seats><center></center></div>
+<div id=desk7 class=seats><center></center></div>
+<div id=desk8 class=seats><center></center></div> -->
+</div>
+
+<style type="text/css">
+
+input {
+	position: relative;
+	top: 400px;
+    left: 20px;
+	height: 200px; 
+	width: 200px; 
+	border: 5px solid black;
+	font-size: 20px;
+	font-style: bold;
+	background-color: #c442bf
+
+}
+
+
+
+.main {
+	width: 850px;
+	height: 850px;
+    border: 10px solid black; 
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 400px;
+   	font-size: 200px;
+   	background-color: #c442bf
+   	
+}
+
+</style>
+
+<script type="text/javascript">
+
+function Shuffle(a) {
+	for(var j, x, i = a.length; i; j = parseInt(Math.random() * i), x = a[--i], a[i] = a[j], a[j] = x);
+	return a;
+};
+
+var roster = [
+	"Barry Allen",
+	"Bruce Banner",
+	"Clint Barton",
+	"Arthur Curry",
+	"Bobby Drake",
+	"Ben Grimm",
+	"Clark Kent", 
+	"Scott Lang",
+	"Lex Luthor",
+	"Pietro Maximoff",
+	"Wanda Maximoff",
+	"Matt Murdock",
+	"Edward Nigma",
+	"Otto Octavius",
+	"Norman Osborn",
+	"Peter Parker",
+	"Kitty Pride",
+	"Diana Prince",
+	"Harley Quinn",
+	"Peter Rasputin",
+	"Reed Richards",
+	"Steve Rogers",
+	"Natasha Romanoff", 
+	"Tony Stark",
+	"Victor Stone", 
+	"Johnny Storm", 
+	"Susan Storm",
+	"Jennifer Walters",
+	"Bruce Wayne", 
+	"Wade Wilson"
+	
+];
+var randomShuff = Shuffle(roster); 
+var i = 0
+
+function activate() {
+	if(i == randomShuff.length) i = 0;
+	return document.getElementById("container").innerHTML = randomShuff[i++];
+	console.log(activate());
+	
+}
+
+/* var colors = ['#3498db', '#e67e22', '#16a085', '#f39c12', '#2c3e50', '#7f8c8d', '#2980b9'];
+var i = 0;
+
+function change()
+{
+    x=document.getElementById("button"); 
+    x.style.color=colors[i++];
+    if(i == colors.length) i = 0;
+}
+
+*/
+
+//var myStringArray = ["Hello","World"];
+// var arrayLength = randomShuff.length;
+// for (var i = 0; i < arrayLength; i++) {
+    //console.log(randomShuff[i]);
+//}
+
+//function activate() {
+
+	//for (var i = 0; i < randomShuff.length; i++)
+     //return document.getElementById("container").innerHTML = randomShuff[i];
+ //console.log(randomShuff[i]);
+
+//}
+
+ //randomShuff[i].onclick = function() { someFunction(this);};
+
+//document.getElementById("button").onclick = activate;
+
+
+
+/* function participate() {
+
+
+
+	var roster = [
+	"Barry Allen", 
+	"Natasha Romanoff", 
+	"Wanda Maximoff", 
+	"Peter Parker", 
+	"Bruce Wayne", 
+	"Diana Prince", 
+	"Harley Quinn"
+]
+
+//for (roster, i = roster.length; i--; ) {
+    //var randomPar = roster.splice(Math.floor(Math.random() * (i + 1)), 1)[0];
+    var randomPar = roster[Math.floor(Math.random() * roster.length)];
+    console.log(randomPar);
+    return document.getElementById("container").innerHTML = randomPar;
+}
+}
+
+*/
+
+
+
+
+//document.getElementById("button").onclick = participate;
+
+
+
+//console.log(randomPar);
+
+//document.getElementById("container").innerHTML = randomPar;
+
+/* for (var i = 0; i < roster.names; i++) { 
+    return Math.floor(Math.random() * names.length);
+    console.log(roster);
+}
+
+}*/
+
+
+
+
+
+
+
+	
+
+</script>
+
+</body>
+</html>
